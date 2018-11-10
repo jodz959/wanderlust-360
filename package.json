@@ -1,0 +1,25 @@
+{
+  "name": "wanderlust-360",
+  "version": "1.0.0",
+  "description": "To help group and solo travelers plan their trips",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jodz959/wanderlust-360.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jodz959/wanderlust-360/issues"
+  },
+  "homepage": "https://github.com/jodz959/wanderlust-360#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.11",
+    "pug": "^2.0.3"
+  }
+}
