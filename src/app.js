@@ -6,7 +6,7 @@ app.set('view engine', 'pug');
 app.set('views', __dirname + '/views');
 
 app.get('/', function(req, res){
-    res.render('layout', {title: "wander"});
+    res.render('dashboard', {title_page: "Wanderlust 360", trip_name: "NYC"});
 });
 
 app.listen(3000);

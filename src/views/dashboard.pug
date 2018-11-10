@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+  title= title_page
+
+  body
+    h1 Hello, world!
+    // pills for 3 widgets (iten, finances, health)
+
+    ul(class="nav nav-pills")
+      li(role="presentation" class="active"): a(href="#") Home
+      li(role="presentation"): a(href="#") Profile
+      li(role="presentation"): a(href="#") Messages
