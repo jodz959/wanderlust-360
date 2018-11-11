@@ -1,0 +1,32 @@
+.bg-pink {
+    background-color: #F3969A  !important;
+}
+
+.bg-red {
+    background-color: #ff5733   !important;
+    color: white
+}
+
+.bg-blue {
+    background-color: #78f7ff !important;
+}
+
+.bg-green {
+    background-color: #78C2AD !important;
+}
+
+.col-xs-12 {
+  max-width: 100% !important;
+  overflow: auto;
+}
+.col-xs-3 {
+  float: none !important;
+  display: inline-block !important;
+}
+.col-xs-3 a {
+  height: 100px;
+  background: pink;
+  display: block;
+  margin-top: 10px;
+  padding: 10px
+}

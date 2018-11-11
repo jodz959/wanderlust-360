@@ -1,0 +1,30 @@
+extends layout.pug
+
+block content
+  link(rel="stylesheet" href="/css/trip_jumbo.css")
+  title= title_page
+
+  body
+
+    div(class="jumbotron")
+      div(align = "left")
+        div(class="circle-avatar" style="background-image:url(http://placekitten.com/g/200/400)")
+        h1= username
+    h2= blurb
+
+
+    .row
+      .col
+        #mdb-lightbox-ui
+        .mdb-lightbox.no-margin
+          figure
+            a.black-text(data-size='1600x1067', href="/dashboard")
+              img.img-fluid(alt='picture', src='../imgs/banner-china.PNG')
+
+          figure
+            a.black-text(data-size='1600x1067')
+              img.img-fluid(alt='picture', src='../imgs/desert.JPG')
+
+          figure
+          a.black-text(data-size='1600x1067')
+            img.img-fluid(alt='picture', src='../imgs/sea.JPG')

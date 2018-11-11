@@ -1,9 +1,11 @@
 extends layout.pug
 
 block content
+  link(rel="stylesheet" href="/css/background_jumbo.css")
   title= title_page
 
   body
+
     div(class="jumbotron")
       h1= trip_name
       h2= summary
@@ -11,7 +13,7 @@ block content
 
     .container
       .float-sm-right
-        button.btn.btn-primary(type='button')= c_lang 
+        button.btn.btn-primary(type='button')= c_lang
 
       ul(class="nav nav-tabs")
         li(class="nav-item")
@@ -19,27 +21,63 @@ block content
         li(class="nav-item")
           a(class="nav-link" data-toggle="tab" href="#finance") Finance
         li(class="nav-item")
-          a(class="nav-link" data-toggle="tab" href="#health") Heallth 
+          a(class="nav-link" data-toggle="tab" href="#health") Health
 
 
       #myTabContent.tab-content
         #itin.tab-pane.fade.active.show
-          .card.text-white.bg-danger.mb-3
-            .card-header Header
+          .card.text-white.bg-pink.mb-3
+            .card-header Day 1
             .card-body
-              h5.card-title Danger card title
+              h5.card-title Tuesday, January 1, 2019
               p.card-text
-                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                | Great Wall of China (8 AM to 12 PM)
+                <br />Olympic Bird's Nest (2 PM to 5 PM)
+          .card.text-white.bg-pink.mb-3
+            .card-header Day 2
+            .card-body
+              h5.card-title Wednesday, January 2, 2019
+              p.card-text
+                | Summer Palace (8 AM to 12 PM)
+                <br />Forbidden City (2 PM to 5 PM)
+          .card.text-white.bg-pink.mb-3
+            .card-header Day 3
+            .card-body
+              h5.card-title Thursday, January 3, 2019
+              p.card-text
+                | Shaolin KungFu Show (10 AM to 12 PM)
+                <br />Terracotta Warriors (2 PM to 5 PM)
+          .card.text-white.bg-pink.mb-3
+              .card-header Add New Event +
+
         #finance.tab-pane.fade
-          .card.text-white.bg-warning.mb-3
-            .card-header Header
+          .card.text-white.bg-green.mb-3
+            .card-header Paid by Ollie
             .card-body
-              h5.card-title Danger card title
+              h5.card-title Bubble Tea $18 for:
               p.card-text
-                | Some quick example text
+                | Ollie<br />Octocat
+          .card.text-white.bg-green.mb-3
+            .card-header Paid by Octocat
+            .card-body
+              h5.card-title Taxi to Forbidden Palace $20 for:
+              p.card-text
+                | Ollie<br />Octocat<br />Testudo
+          .card.text-white.bg-green.mb-3
+            .card-header Paid by Testudo
+            .card-body
+              h5.card-title KungFu Show Tickets $300 for:
+              p.card-text
+                | Ollie<br />Octocat<br />Testudo
+          .card.text-white.bg-green.mb-3
+            .card-header Add New Transaction +
+
+
+
         #health.tab-pane.fade
+
           .div.row
-            .div.col-4   
+            .div.col-4
               .card.text-white.bg-secondary.mb-3
                 .card-header Local Fire Department
                 .card-body
@@ -47,15 +85,15 @@ block content
                   h2.card-title= f_num
                   p.card-text
                     | Some quick example text
-            .div.col-4   
+            .div.col-4
               .card.text-white.bg-info.mb-3
                 .card-header Local Police
                 .card-body
                   img(src="/imgs/police.png")
-                  h2.card-title= p_num 
+                  h2.card-title= p_num
                   p.card-text
                     | Some quick example text
-            .div.col-4   
+            .div.col-4
               .card.text-white.bg-warning.mb-3
                 .card-header Local Ambulance
                 .card-body
@@ -63,3 +101,20 @@ block content
                   h2.card-title= a_num
                   p.card-text
                     | Some quick example text
+
+            .div.row
+              .div.col
+                .card.bg-red
+                  .card-body
+                    .container
+                      img(src="/imgs/testudio.jpg" class="rounded float-right" )
+                    h5.card-title Card title
+                    p.card-text
+                      | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                  ul.list-group.list-group-flush.text-dark
+                    li.list-group-item Cras justo odio
+                    li.list-group-item Dapibus ac facilisis in
+                    li.list-group-item Vestibulum at eros
+                  .card-body
+                    a.card-link(href='#') Card link
+                    a.card-link(href='#') Another link
