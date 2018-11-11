@@ -1,0 +1,14 @@
+.login {
+   align-content: center;
+}
+
+input {
+   padding: 5px;
+   margin-top: 5px;
+}
+
+.register-form {
+  align-content: center;
+  max-width: 500px;
+  margin: auto;
+}
