@@ -31,7 +31,7 @@ var options = {
    method: 'GET',
    q: {
       'limit': '4',
-      'lang':'en', 
+      'lang':'en',
       'currency': 'USD',
       'product_groups': 'Food, Wine & Nightlife'
    },
@@ -63,7 +63,7 @@ app.get('/', function(req, res){
          });
    }).catch(function(err) {
       console.log("ERROR:", err);
-      
+
    });
 });
 

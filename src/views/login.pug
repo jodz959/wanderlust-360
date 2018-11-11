@@ -2,17 +2,16 @@ extends layout.pug
 
 block content
    link(rel="stylesheet" href="/css/login.css")
+
    div(class="register-form")
-      div(class="layout-title")
-      div
-         form(class="login" action="/login" method="POST")
-            input(type="text" name="username" placeholder="Email")
-            br
-            input(type="password" autocomplete="off" name="password" placeholder="Password")
-            br
-            input(type="submit" value="Login")
+    div(class="layout-title")
+       form(class="login" action="/login" method="POST")
+          input(type="text" name="username" placeholder="Email")
+          br
+          input(type="password" autocomplete="off" name="password" placeholder="Password")
+          br
+          input(type="submit" value="Login")
 
-         a(href="/signup") Create New Account
-         span|
-         a(href="/forgotpw") Forgot Password
-
+       a(href="/signup") Create New Account
+       span | |
+       a(href="/forgotpw") Forgot Password
