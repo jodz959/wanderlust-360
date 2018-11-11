@@ -1,0 +1,30 @@
+.jumbotron
+  h1 China WinterTrip
+  h2 Winter Vacation with my Best Buds!
+  div(align='left')
+.container
+  .float-sm-right
+    button.btn.btn-primary(type='button') English
+  ul.nuav.nav-tabs
+    li.nav-item
+      a.nav-link.active.show(data-toggle='tab', href='#itin') Itinerary
+    li.nav-item
+      a.nav-link(data-toggle='tab', href='#finance') Finance
+  #myTabContent.tab-content
+    #itin.tab-pane.fade.active.show
+      .card.text-white.bg-danger.mb-3
+        .card-header Header
+        .card-body
+          h5.card-title Danger card title
+          p.card-text
+            | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+    #finance.tab-pane.fade
+      .card.text-white.bg-warning.mb-3
+        .card-header Header
+        .card-body
+          h5.card-title Danger card title
+          p.card-text
+            | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')
