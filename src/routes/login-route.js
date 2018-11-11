@@ -19,7 +19,7 @@ router.post('/', function(req, res) {
    User.find(query, function(err, users) {
       if(bcrypt.compareSync(req.body.password, users[0].pwHash)){
          console.log('Login: found one ');
-         res.send('Redirect should be here');
+         res.redirect('/home');
       } else {
          res.send('Wrong password');
       }

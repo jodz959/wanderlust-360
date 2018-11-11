@@ -23,7 +23,7 @@ router.post('/', function(req, res) {
       date_created: Date.now()
    }).save(function(err, user){
       console.log("SIGNUP: saved on sign up");
-      res.redirect('/');
+      res.redirect('/home');
    });
   // res.redirect('/dashboard');
 });
