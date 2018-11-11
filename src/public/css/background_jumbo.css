@@ -12,3 +12,8 @@
 .jumbotron h2 {
     color: white;
   }
+
+.card-title {
+   font-size: 32px;
+   align-content: center;
+}

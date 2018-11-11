@@ -11,13 +11,15 @@ block content
 
     .container
       .float-sm-right
-        button.btn.btn-primary(type='button') English
+        button.btn.btn-primary(type='button')= c_lang 
 
       ul(class="nav nav-tabs")
         li(class="nav-item")
           a(class="nav-link active show" data-toggle="tab" href="#itin") Itinerary
         li(class="nav-item")
           a(class="nav-link" data-toggle="tab" href="#finance") Finance
+        li(class="nav-item")
+          a(class="nav-link" data-toggle="tab" href="#health") Heallth 
 
 
       #myTabContent.tab-content
@@ -35,3 +37,29 @@ block content
               h5.card-title Danger card title
               p.card-text
                 | Some quick example text
+        #health.tab-pane.fade
+          .div.row
+            .div.col-4   
+              .card.text-white.bg-secondary.mb-3
+                .card-header Local Fire Department
+                .card-body
+                  img(src="/imgs/fire.png")
+                  h2.card-title= f_num
+                  p.card-text
+                    | Some quick example text
+            .div.col-4   
+              .card.text-white.bg-info.mb-3
+                .card-header Local Police
+                .card-body
+                  img(src="/imgs/police.png")
+                  h2.card-title= p_num 
+                  p.card-text
+                    | Some quick example text
+            .div.col-4   
+              .card.text-white.bg-warning.mb-3
+                .card-header Local Ambulance
+                .card-body
+                  img(src="/imgs/ambulance.png")
+                  h2.card-title= a_num
+                  p.card-text
+                    | Some quick example text

@@ -23,8 +23,20 @@ app.use('/login', loginRouter);
 app.use('/sign-up', signupRouter);
 
 app.get('/', function(req, res){
-    res.render('dashboard', {title_page: "Wanderlust 360",
-    trip_name: "China WinterTrip", summary: "Winter Vacation with my Best Buds!"});
+
+    Country.find({name: "China"}, function(err, countries) {
+
+       const country = countries[0];
+
+       res.render('dashboard', { title_page: "Wanderlust 360", 
+                                 trip_name: "China WinterTrip",   
+                                 summary: "Winter Vacation with my Best Buds!",
+                                 c_lang: "Translate to " + country.lang,
+                                 p_num: country.police,
+                                 f_num: country.fire,
+                                 a_num: country.ambulance});
+
+   });
 });
 
 

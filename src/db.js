@@ -20,6 +20,8 @@ const countrySchema = new Schema({
 
 const tripSchema = new Schema({
    user: {type: mongoose.Schema.Types.ObjectId, ref: 'User'}, 
+   city: String,
+   country: String,
    start_date: Date,
    end_date: Date  
 });
