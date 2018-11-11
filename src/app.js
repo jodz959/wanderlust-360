@@ -23,12 +23,8 @@ app.use('/login', loginRouter);
 app.use('/sign-up', signupRouter);
 
 app.get('/', function(req, res){
-<<<<<<< Updated upstream
     res.render('dashboard', {title_page: "Wanderlust 360",
     trip_name: "China WinterTrip", summary: "Winter Vacation with my Best Buds!"});
-=======
-   res.render('bootstrap-layout', {title_page: "Wanderlust 360", trip_name: "NYC"});
->>>>>>> Stashed changes
 });
 
 
