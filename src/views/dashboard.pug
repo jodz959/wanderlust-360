@@ -26,6 +26,7 @@ block content
 
       #myTabContent.tab-content
         #itin.tab-pane.fade.active.show
+
           .card.text-white.bg-pink.mb-3
             .card-header Day 1
             .card-body
@@ -40,6 +41,18 @@ block content
               p.card-text
                 | Summer Palace (8 AM to 12 PM)
                 <br />Forbidden City (2 PM to 5 PM)
+          h2.thead Most memorable places according to travellers from TripAdvisor
+          .div.row
+            each act in activity
+               .div.col-3
+                 .card.text-white.bg-success.mb-3.tcards
+                   .card-header= act.title
+                   .card-body
+                      img(class="tpics" src="" + act.images.medium.url)
+                      h2.card-title
+                      p.card-text
+                        act.return_details
+
           .card.text-white.bg-pink.mb-3
             .card-header Day 3
             .card-body

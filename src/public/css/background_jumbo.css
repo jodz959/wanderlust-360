@@ -17,3 +17,16 @@
    font-size: 32px;
    align-content: center;
 }
+
+.tpics {
+   height: 200px;
+   width: 200px
+}
+
+.tcards {
+   height: 350px;
+}
+
+.thead{
+   color:mint;
+}
