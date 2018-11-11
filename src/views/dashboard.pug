@@ -14,28 +14,16 @@ block content
         button.btn.btn-primary(type='button') English
 
       ul(class="nav nav-tabs")
-        li(class="nav-item")
-          a(class="nav-link active show" data-toggle="tab" href="#itin") Itinerary
-        li(class="nav-item")
-          a(class="nav-link" data-toggle="tab" href="#finance") Finance
+        li(class="active"): a(data-toggle="tab" href="#itin" Itinerary
+        li
+          a(data-toggle="tab" href="#finance") Finance
 
 
+      div(class="tab-content")
+        div(id="itin" class="tab-pane fade in active")
+          p
+            Some quick example text to build on the cars;s content.
 
-      div(id="myTabContent" class="tab-content")
-        div(id="itin" class="tab-pane fade active show")
-        .card.text-white.bg-danger.mb-3
-          .card-header Header
-          .card-body
-            h5.card-title Danger card title
-            p.card-text
-              | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-
-
-      div(id="finance" class="tab-pane fade")
-          div(id="finance" class="tab-pane fade active show")
-          .card.text-white.bg-warning.mb-3
-            .card-header Header
-            .card-body
-              h5.card-title Danger card title
-              p.card-text
-                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+        div(id="finance" class="tab-pane fades")
+          p
+            Some o build on the card title and make up the bulk of the card&apos;s content.
