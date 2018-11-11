@@ -1,0 +1,24 @@
+extends layout.pug
+
+block content
+   link(rel="stylesheet" href="/css/sign-up.css")
+   div(class="register-form")
+      div(class="layout-title")
+      div
+         form(class="login" action="/sign-up" method="POST")
+            input(type="text" name="fname" placeholder="First Name")
+            br
+            input(type="text" name="lname" placeholder="Last Name")
+            br
+            input(type="text" name="pcity" placeholder="City, State")
+            br
+            input(type="text" name="username" placeholder="Email")
+            br
+            input(type="password" autocomplete="off" name="password" placeholder="Password")
+            br
+            input(type="submit" value="Sign Up")
+
+         a(href="/signup") Create New Account
+         span|
+         a(href="/forgotpw") Forgot Password
+
